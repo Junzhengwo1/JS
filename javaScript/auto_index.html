@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自动跳转首页</title>
+
+    <style>
+
+        p{
+            text-align: center;
+        }
+        span{
+            color: red;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<p><span id="time">5</span>秒后跳转到首页... </p>
+
+
+<script>
+    //倒计时定时器读秒
+    //定义一个方法，来获取span标签，修改秒数内容。
+    //定义一个定时器，一秒执行一次方法。
+    var second=5;
+    var time = document.getElementById("time");
+
+    function showTime() {
+        second--;
+        if(second<=0){
+            location.href="https://www.baidu.com";
+        }
+        time.innerHTML=second+"";
+
+    }
+    setInterval(showTime,1000);
+
+</script>
+
+
+</body>
+</html>

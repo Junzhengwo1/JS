@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>window对象</title>
+
+<!--
+  /*
+        与弹出相关的方法
+         */
+
+        /*
+        window.alert("hello");
+        window.blur();//
+        window.confirm();//确认对话框。
+        window.prompt();//显示可提示用户输入的对话框。
+        */
+
+        /*
+        与打开关闭有关的方法
+         */
+
+
+         /*
+         定时器
+         setTimeOut（） 在指定的毫秒后调用函数或方法。
+
+         */
+         -->
+
+
+
+
+</head>
+<body>
+<input id="openkou" type="button" value="打开窗口" >
+<input id="closekou" type="button" value="关闭窗口">
+<!--
+<script>
+    var openkou = document.getElementById("openkou");
+    var newWindow;
+    openkou.onclick=function () {
+        newWindow=window.open("https://www.baidu.com");
+    }
+    var closerkou = document.getElementById("closekou");
+    closerkou.onclick=function () {
+        newWindow.close();
+    }
+
+
+
+
+</script>
+-->
+<script>
+    //setTimeout(fun,2000);
+    //setInterval(fun,2000);
+    var timeout = setTimeout(fun,3000); //返回值是唯一标识，用于取消定时器的。
+    //clearTimeout(timeout);取消定时器
+
+    function fun() {
+        alert("bomm~~")
+    }
+
+</script>
+
+
+
+
+</body>
+</html>
